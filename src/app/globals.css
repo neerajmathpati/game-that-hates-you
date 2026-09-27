@@ -1,0 +1,33 @@
+/* ── globals.css — base styles ───────────────────────────────────────────── */
+@import "tailwindcss";
+
+/* Loading pulse animation for GameShell */
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1); }
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0a0a0f;
+  color: #e5e7eb;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0a0f; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 2px; }
